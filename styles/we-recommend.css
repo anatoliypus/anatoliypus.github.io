@@ -1,0 +1,89 @@
+.we-recommend 
+{
+  height: 530px;
+  width: 100%;
+  background-color: #5c5c5c;
+  background-image: url("../img/we-recommend-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.we-recommend .container 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-slider 
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.product
+{
+  display: flex;
+  flex-direction: column;
+  height: 290px;
+  width: 330px;
+  background-color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.we-recommend-headings
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+
+.product-img 
+{
+  width: 100%;
+  height: auto;
+}
+
+.product h3 
+{
+  font-weight: 600;
+  font-size: 22px;
+  color: #5c5c5c;
+  padding-bottom: 15px;
+}
+
+.product h4 
+{
+  font-weight: normal;
+  font-size: 16px;
+  color: #787676;
+}
+
+.we-recommend h2 
+{
+  font-weight: 600;
+  font-size: 30px;
+  color: #5c5c5c;
+  border-bottom: 2px solid #168514;
+  height: 50px;
+}
+
+.we-recommend button 
+{
+  width: 250px;
+  height: 60px;
+  background-color: #168514;
+  border: 0;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+}
