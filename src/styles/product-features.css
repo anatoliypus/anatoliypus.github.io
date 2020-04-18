@@ -1,15 +1,15 @@
 .product-features
 {
-  height: 550px;
+  height: 500px;
   width: 100%;
   background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .product-features .container 
 {
   box-sizing: border-box;
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -54,6 +54,7 @@
   font-size: 30px;
   font-weight: 500;
   padding-top: 40px;
+  text-align: center;
 }
 
 .features-block p 
@@ -67,8 +68,8 @@
 
 .product-feature
 {
-  width: 30%;
-  height: 260px;
+  width: 27%;
+  height: 300px;
   background-color: transparent;
   display: flex;
   flex-direction: column;
