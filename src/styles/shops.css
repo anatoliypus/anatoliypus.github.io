@@ -1,0 +1,32 @@
+.shops h2 
+{
+  font-weight: 600;
+  font-size: 30px;
+  color: #5c5c5c;
+  border-bottom: 2px solid #168514;
+  height: 50px;
+  padding-top: 60px;
+}
+
+.shops 
+{
+  height: 770px;
+  width: 100%;
+  background-color: #fff;
+  background-image: url("../img/shops-bg.png");
+  padding-bottom: 60px;
+}
+
+.shops-heading 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.map-block
+{
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}

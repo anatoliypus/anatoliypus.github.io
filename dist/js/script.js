@@ -1,0 +1,4 @@
+
+const links=document.getElementsByClassName('nav-links');function anchor(event){let destId=event.target.getAttribute('destId');let dest=document.getElementById(destId);let destOffset=dest.getBoundingClientRect().top;$('html, body').animate({scrollTop:destOffset},1000);}
+for(el of links){el.addEventListener('click',anchor);}
+$('#modal-menu, #shadow').hide();$('#modal-btn').click(function(){let offset=document.documentElement.clientHeight/6.66+window.pageYOffset;$('#modal-menu').css('top',offset+'px');$('#modal-menu, #shadow').fadeIn(300);document.body.style.overflow="hidden";});$('#modal-menu-close').click(function(){$('#modal-menu, #shadow').fadeOut(300);document.body.style.overflow="";})
