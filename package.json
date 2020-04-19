@@ -28,7 +28,8 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-jsmin": "^0.1.5",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "lodash.template": "^4.5.0"
   },
   "dependencies": {
     "fsevents": "^2.1.2"
