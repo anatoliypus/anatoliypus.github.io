@@ -1,11 +1,7 @@
 .logo 
 {
-  width: 20%;
-  height: 150px;
-  background-color: #C80005;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: auto;
+  height: auto;
 }
 
 .logo img
@@ -40,7 +36,7 @@ nav a
 {
   font-weight: 300;
   color: #fff;
-  font-size: 24px;
+  font-size: 27px;
   text-decoration: none;
   cursor: pointer;
   box-sizing: border-box;
@@ -69,6 +65,7 @@ nav
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-top: 30px;
 }
 
 header 
@@ -139,6 +136,7 @@ header
 {
   background-color: #10580e;
   border: 2px solid #8f8f8f;
+  color: #8f8f8f;
   transition: 0.2s;
 }
 
