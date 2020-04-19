@@ -13,7 +13,8 @@ gulp.task('browserSync', function(done) {
   browserSync.init({
     server: {
       baseDir: 'src'
-    }
+    },
+    open: false
   })
   browserSync.watch('src/*.html').on('change', browserSync.reload);
   browserSync.watch('src/styles/*').on('change', browserSync.reload);
