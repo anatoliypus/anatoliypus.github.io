@@ -6,6 +6,8 @@ let cssmin = require('gulp-cssmin');
 let htmlmin = require('gulp-htmlmin');
 let concat = require('gulp-concat');
 let jsmin = require('gulp-jsmin');
+let htmlreplace = require('gulp-html-replace');
+let clean = require('gulp-clean');
 
 gulp.task('browserSync', function(done) {
   browserSync.init({
@@ -18,26 +20,26 @@ gulp.task('browserSync', function(done) {
   done();
 }); 
 
-gulp.task('css', function(done) {
-  gulp.src('src/styles/*').pipe(concat('style.css')).pipe(autoprefixer()).pipe(cssmin()).pipe(gulp.dest('dist/css'));
-  done();
+gulp.task('css', function() {
+  return gulp.src('src/styles/*').pipe(concat('style.css')).pipe(autoprefixer()).pipe(cssmin()).pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('img', function(done) {
-  gulp.src('src/img/*').pipe(imagemin()).pipe(gulp.dest('dist/img'));
-  done();
+gulp.task('img', function() {
+  return gulp.src('src/img/*').pipe(imagemin()).pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('html', function(done) {
-  gulp.src('src/*.html').pipe(htmlmin()).pipe(gulp.dest('dist'));
-  done();
+gulp.task('html', function() {
+  return gulp.src('src/*.html').pipe(htmlreplace({js: {src: 'js/script.js', tpl: '<script src="%s" defer></script>'}, css: 'css/style.css'})).pipe(htmlmin()).pipe(gulp.dest('dist'));
 });
 
-gulp.task('js', function(done) {
-  gulp.src('src/js/*').pipe(concat('script.js')).pipe(jsmin()).pipe(gulp.dest('dist/js'));
-  done();
+gulp.task('js', function() {
+  return gulp.src('src/js/*').pipe(concat('script.js')).pipe(jsmin()).pipe(gulp.dest('dist/js'));
 });
 
-exports.bundle = gulp.series('css', 'img', 'html', 'js');
+gulp.task('clean-dist', function() {
+  return gulp.src('dist', {read: false, allowEmpty: true}).pipe(clean());
+})
+
+exports.bundle = gulp.series('clean-dist', 'img', 'css', 'html', 'js');
 
 
