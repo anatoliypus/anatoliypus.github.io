@@ -23,6 +23,7 @@
   <!-- build:js -->
   <script src="js/showModals.js" defer></script>
   <script src="js/anchors.js" defer></script>
+  <script src="js/navShow.js" defer></script>
   <!-- endbuild -->
   <title>ЗАО "Марийское"</title>
 </head>
@@ -61,23 +62,25 @@
     </div>
   </div>
   <div id="shadow" id='shadow'></div>
-  <header>
-    <div class="container">
+  <header id="header">
+    <div id="nav-block">
       <nav id='header-nav'>
-        <div class='logo'>
-          <img src="img/logo.png" alt="logo">
+        <div class="container">
+          <a destId="header" id="logoLink"></a>
+          <div class="links-hover"><a destId="product-features" class="nav-links">продукция</a></div>
+          <div class="links-hover"><a destId="shops" class="nav-links">магазины</a></div>
+          <div class="links-hover"><a destId="production" class="nav-links">производство</a></div>
+          <div class="links-hover"><a destId="grill-bar" class="nav-links">гриль-бар</a></div>
+          <button class="insta-btn">
+            <img src="img/insta-button.png" alt="Instagram">
+          </button>
+          <button class='modal-btn' id="modal-btn">
+            <img src="img/header-modal-btn.png" alt="Open the menu">
+          </button>
         </div>
-        <div class="links-hover"><a destId="product-features" class="nav-links">продукция</a></div>
-        <div class="links-hover"><a destId="shops" class="nav-links">магазины</a></div>
-        <div class="links-hover"><a destId="production" class="nav-links">производство</a></div>
-        <div class="links-hover"><a destId="grill-bar" class="nav-links">гриль-бар</a></div>
-        <button class="insta-btn">
-          <img src="img/insta-button.png" alt="Instagram">
-        </button>
-        <button class='modal-btn' id="modal-btn">
-          <img src="img/header-modal-btn.png" alt="Open the menu">
-        </button>
       </nav>
+    </div>
+    <div class="container header-content">
       <h1 class="main-heading">Экологически чистая курочка для питания всей семьи</h1>
       <div class="catalog-open-block">
         <p class="main-p">
@@ -224,16 +227,6 @@
       </div>
     </div>
   </div>
-  <div class="shops" id="shops">
-    <div class="container">
-      <div class="shops-heading">
-        <h2>Адреса фирменных магазинов</h2>
-      </div>
-      <div class="map-block" id="map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f8eafb211c3139a29bd37ba7051c48e961e33a102fa45ad8819c3d750fb705b&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
-      </div>
-    </div>
-  </div>
   <div class="reviews">
     <img src="img/left-arrow.png" alt="left arrow" id="reviews-left-arrow">
     <img src="img/arrow-right.png" alt="right arrow" id="reviews-right-arrow">
@@ -273,6 +266,16 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="shops" id="shops">
+    <div class="container">
+      <div class="shops-heading">
+        <h2>Адреса фирменных магазинов</h2>
+      </div>
+      <div class="map-block" id="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f8eafb211c3139a29bd37ba7051c48e961e33a102fa45ad8819c3d750fb705b&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
       </div>
     </div>
   </div>
