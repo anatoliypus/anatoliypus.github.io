@@ -95,7 +95,7 @@ header
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 775px;
+  height: 775px !important;
 }
 
 .catalog-open-block
