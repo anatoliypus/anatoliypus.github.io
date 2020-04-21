@@ -102,13 +102,13 @@
 #we-recommend-left-arrow
 {
   position: absolute;
-  top: 1650px;
+  top: 1820px;
   left: 80px;
 }
 
 #we-recommend-right-arrow
 {
   position: absolute;
-  top: 1650px;
+  top: 1820px;
   left: calc(100% - 100px);
 }

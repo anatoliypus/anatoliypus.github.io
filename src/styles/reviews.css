@@ -129,13 +129,13 @@
 #reviews-left-arrow
 {
   position: absolute;
-  top: 4400px;
+  top: 3800px;
   left: 80px;
 }
 
 #reviews-right-arrow
 {
   position: absolute;
-  top: 4400px;
+  top: 3800px;
   left: calc(100% - 100px);
 }

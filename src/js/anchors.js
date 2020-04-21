@@ -9,7 +9,9 @@ function anchor(event) {
   if (destId == 'product-features' && window.pageYOffset < 300) {
     navPar = 0;
   }
-  $('html, body').animate({scrollTop: destOffset + window.pageYOffset - navPar}, 1500);
+  if (destId != 'header' || window.pageYOffset > 300) {
+    $('html, body').animate({scrollTop: destOffset + window.pageYOffset - navPar}, 1500);
+  }
 }
 
 for (el of links) {

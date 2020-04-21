@@ -12,6 +12,37 @@
   <title>ЗАО "Марийское"</title>
 </head>
 <body>
+  <div id="modal-reviews">
+    <button id="modal-reviews-close"></button>
+    <div class="container">
+      <h2>Оставить отзыв</h2>
+      <form action="">
+        <div class="input-block">
+          <h3>Имя</h3>
+          <input type="text" class="small-input">
+        </div>
+        <div class="input-block">
+          <h3>Email</h3>
+          <input type="text" class="small-input">
+        </div>
+        <div class="input-block">
+          <h3>Телефон</h3>
+          <input type="text" class="small-input">
+        </div>
+        <div class="message-block">
+          <h3>Напишите Ваш отзыв</h3>
+          <textarea class="big-input"></textarea>
+        </div>
+        <div class="submit-block">
+          <input type="submit" class="submit-btn" value="Отправить сообщение">
+          <p>
+            Нажимая кнопку “Отправить сообщение”, Вы подтверждаете согласие 
+            на обработку персональных данных
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
   <div id="modal-menu">
     <button id="modal-menu-close"></button>
     <div class="modal-menu-left">
@@ -28,20 +59,24 @@
       <img src="img/small-insta-logo.png" alt="instagram">
     </div> 
     <div class="modal-menu-right">
-      <div>
+      <div class="modal-menu-right-block">
         <img src="img/green-chicken.png" alt="chicken">
-        <h3 class="modal-menu-right-links">Мясо птицы</h3>
-        <h3 class="modal-menu-right-links">Колбасные изделия</h3>
-        <h3 class="modal-menu-right-links">Молочная продукция</h3>
-        <h3 class="modal-menu-right-links">Полуфабрикаты</h3>
-        <h3 class="modal-menu-right-links">Сыры</h3>
+        <div class="modal-menu-content">
+          <h3 class="modal-menu-right-links">Мясо птицы</h3>
+          <h3 class="modal-menu-right-links">Колбасные изделия</h3>
+          <h3 class="modal-menu-right-links">Молочная продукция</h3>
+          <h3 class="modal-menu-right-links">Полуфабрикаты</h3>
+          <h3 class="modal-menu-right-links">Сыры</h3>
+        </div>
       </div>
-      <div>
+      <div class="modal-menu-right-block">
         <img src="img/others-label.png" alt="others label">
-        <h3 class="modal-menu-right-links">Раскрытие информации</h3>
-        <h3 class="modal-menu-right-links">Соглашение о конфиденциальности</h3>
-        <h3 class="modal-menu-right-links">Для бизнес-партнеров</h3>
-        <h3 class="modal-menu-right-links">Наши награды</h3>
+        <div class="modal-menu-content">
+          <h3 class="modal-menu-right-links">Раскрытие информации</h3>
+          <h3 class="modal-menu-right-links">Соглашение о конфиденциальности</h3>
+          <h3 class="modal-menu-right-links">Для бизнес-партнеров</h3>
+          <h3 class="modal-menu-right-links">Наши награды</h3>
+        </div>
       </div>
     </div>
   </div>
@@ -157,15 +192,15 @@
       </div>
       <div class="dishes">
         <div class="dish">
-          <img src="img/fried-chicken.png" alt="chicken">
+          <img src="img/fried-chicken.jpeg" alt="chicken">
           <h3>Ароматная курочка-гриль</h3>
         </div>
         <div class="dish">
-          <img src="img/fried-wings.png" alt="wings">
+          <img src="img/fried-wings.jpeg" alt="wings">
           <h3>Зажаристые крылышки</h3>
         </div>
         <div class="dish">
-          <img src="img/fried-legs.png" alt="legs">
+          <img src="img/fried-legs.jpeg" alt="legs">
           <h3>Ножки-гриль в кисло-сладкой глазури</h3>
         </div>
       </div>
@@ -217,7 +252,7 @@
     <div class="container">
       <div class="reviews-headings">
         <h2>Отзывы</h2>
-        <button>Оставить отзыв</button>
+        <button id="makeReview">Оставить отзыв</button>
       </div>
       <div class="reviews-block">
         <div class="review">
