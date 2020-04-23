@@ -224,3 +224,11 @@ header
   }
 
 }
+
+@media screen and (max-width: 1300px)
+{
+  .slider-dots 
+  {
+    left: 7.5%;
+  }
+}
