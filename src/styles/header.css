@@ -151,11 +151,6 @@ header
   width: calc(100% / 5);
 }
 
-#slide1 
-{
-  background-image: url("../img/slide1-bg.jpg");
-}
-
 #slide2
 {
   background-image: url("../img/slide2-bg.png");
@@ -169,11 +164,6 @@ header
 #slide4 
 {
   background-image: url("../img/slide4-bg.png");
-}
-
-#slide5
-{
-  background-image: url("../img/slide5-bg.png");
 }
 
 .header-content
