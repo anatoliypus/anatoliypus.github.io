@@ -6,6 +6,47 @@
   background-size: cover;
 }
 
+.slick-prev
+{
+    position: absolute;
+    top: 438px;
+    left: 48px;
+    background-color: #706b65;
+    border: none;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    transition: 0.4s;
+    z-index: 102;
+    font-size: 0;
+}
+
+.slick-next:hover, .slick-prev:hover
+{
+    background-color: #e74c3c;
+    transition: 0.4s;
+}
+
+.slick-slider, .slick-list, .draggable, .slick-track, .slick-initialized
+{
+  height: 900px;
+}
+
+.slick-next
+{
+    position: absolute;
+    top: 438px;
+    right: 48px;
+    background-color: #706b65;
+    border: none;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    transition: 0.4s;
+    z-index: 102;
+    font-size: 0;
+}
+
 .insta-btn, .modal-btn 
 {
   width: 55px;
@@ -82,11 +123,11 @@ nav
 
 header 
 {
-  width: 500%;
-  height: 900px;
+  height: 100%;
+  /* width: 500%;
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
+  flex-direction: row; */
 }
 
 .slide 
@@ -94,7 +135,9 @@ header
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #a09e9e;
-  width: calc(100% / 5);
+  display: flex;
+  flex-direction: column;
+  /* width: calc(100% / 5); */
 }
 
 #slide1 
@@ -125,13 +168,13 @@ header
 .header-content
 {
   box-sizing: border-box;
-  padding-top: 60px;
-  padding-bottom: 90px;
+  padding-bottom: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding-top: 200px;
+  padding-top: 220px;
+  min-width: 0;
 }
 
 .catalog-open-block
@@ -144,7 +187,7 @@ header
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  min-width: 0;
 }
 
 .main-heading 

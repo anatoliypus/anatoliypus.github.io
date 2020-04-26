@@ -6,6 +6,7 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="slick/slick.css">
   <!-- build:css -->
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/header.css">
@@ -19,12 +20,13 @@
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/modal-windows.css">
   <!-- endbuild -->
-  <script src="https://code.jquery.com/jquery-3.5.0.min.js" defer></script>
+  <script src="jquery/jquery.js" defer></script>
+  <script src="slick/slick.min.js" defer></script>
   <!-- build:js -->
   <script src="js/showModals.js" defer></script>
   <script src="js/anchors.js" defer></script>
   <script src="js/navShow.js" defer></script>
-  <script src="js/headerSlider.js" defer></script>
+  <script src="js/headerSliderv2.js" defer></script>
   <!-- endbuild -->
   <title>ЗАО "Марийское"</title>
 </head>
@@ -115,15 +117,15 @@
       </div>
     </nav>
   </div>
-  <div class="slider-dots">
-    <div class="dot active-dot" itemTo="1"></div>
+  <!-- <div class="slider-dots">
+    <div class="dot active-dot" itemTo="0"></div>
+    <div class="dot" itemTo="1"></div>
     <div class="dot" itemTo="2"></div>
     <div class="dot" itemTo="3"></div>
     <div class="dot" itemTo="4"></div>
-    <div class="dot" itemTo="5"></div>
-  </div>
+  </div> -->
   <header id="header">
-    <div class="slide" item="1" id="slide1">
+    <div class="slide" item="0" id="slide1">
       <div class="container header-content">
         <h1 class="main-heading">Экологически чистая курочка для питания всей семьи</h1>
         <div class="catalog-open-block">
@@ -137,7 +139,7 @@
         </div>
       </div>
     </div>
-    <div class="slide" item="2" id="slide2">
+    <div class="slide" item="1" id="slide2">
       <div class="container header-content">
         <h1 class="main-heading">
           Самая сочная, нежная и хрустящая курочка-гриль 
@@ -155,7 +157,7 @@
         </div>
       </div>
     </div>
-    <div class="slide" item="3" id="slide3">
+    <div class="slide" item="2" id="slide3">
       <div class="container header-content">
         <h1 class="main-heading">Натуральная, вкусная и полезная молочная продукция ЗАО “Марийское”</h1>
         <div class="catalog-open-block">
@@ -170,7 +172,7 @@
         </div>
       </div>
     </div>
-    <div class="slide" item="4" id="slide4">
+    <div class="slide" item="3" id="slide4">
       <div class="container header-content">
         <h1 class="main-heading">Идеальный куриный шницель “Де-Воляй” на ужин за 15 минут!</h1>
         <div class="catalog-open-block">
@@ -185,7 +187,7 @@
         </div>
       </div>
     </div>
-    <div class="slide" item="5" id="slide5">
+    <div class="slide" item="4" id="slide5">
       <div class="container header-content">
         <h1 class="main-heading">
           Идеальный куриные фрикадельки на ужин 
@@ -230,8 +232,8 @@
     </div>
   </div>
   <div class="we-recommend">
-    <img src="img/left-arrow.png" alt="left arrow" id="we-recommend-left-arrow">
-    <img src="img/arrow-right.png" alt="right" id="we-recommend-right-arrow">
+    <img src="img/angle-left.png" alt="left arrow" id="we-recommend-left-arrow">
+    <img src="img/angle-right.png" alt="right" id="we-recommend-right-arrow">
     <div class="container">
       <div class="we-recommend-headings">
         <div>
@@ -331,8 +333,8 @@
     </div>
   </div>
   <div class="reviews">
-    <img src="img/left-arrow.png" alt="left arrow" id="reviews-left-arrow">
-    <img src="img/arrow-right.png" alt="right arrow" id="reviews-right-arrow">
+    <img src="img/angle-left.png" alt="left arrow" id="reviews-left-arrow">
+    <img src="img/angle-right.png" alt="right arrow" id="reviews-right-arrow">
     <div class="container">
       <div class="reviews-headings">
         <h2>Отзывы</h2>
