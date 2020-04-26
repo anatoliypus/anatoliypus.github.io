@@ -34,6 +34,12 @@ div
   z-index: 100;
 }
 
+.logo 
+{
+  width: 113px;
+  height: 100px;
+}
+
 @media screen and (max-width: 1300px) 
 {
   .container 
