@@ -1,8 +1,11 @@
 .keep-in-touch 
 {
   width: 100%;
-  height: 150px;
+  height: 200px;
   background-color: #168514;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .keep-in-touch .container 
@@ -11,6 +14,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .keep-in-touch button 

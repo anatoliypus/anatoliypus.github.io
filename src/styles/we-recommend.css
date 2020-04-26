@@ -1,6 +1,5 @@
 .we-recommend 
 {
-  height: 530px;
   width: 100%;
   background-color: #5c5c5c;
   background-image: url("../img/we-recommend-bg.png");
@@ -9,6 +8,7 @@
   box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 60px;
+  height: auto;
 }
 
 .we-recommend .container 
@@ -24,6 +24,8 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
+  height: auto;
 }
 
 .product
@@ -36,6 +38,7 @@
   padding: 30px;
   box-sizing: border-box;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .we-recommend-headings
