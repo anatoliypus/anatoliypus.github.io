@@ -1,4 +1,4 @@
-$('document').ready(function() {
+function run() {
   $('.header-slider').css({width: '100%'});
   let imgNext = document.createElement('img');
   imgNext.src = "img/angle-right.png";
@@ -14,9 +14,11 @@ $('document').ready(function() {
     autoplay: true, 
     autoplaySpeed: 4000,
     speed: 700,
-    lazyLoad: 'ondemand'
+    pauseOnHover: false
   });
 
   document.querySelector('.slick-next').append(imgNext);
   document.querySelector('.slick-prev').append(imgPrev);
-});
+}
+
+window.onload = run;

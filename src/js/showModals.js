@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   $('#modal-menu, #shadow, #modal-reviews').hide();
-  $('#modal-menu').css({visibility: 'visible'});
+  $('#modal-menu, #modal-reviews, #shadow').css({visibility: 'visible'});
 
   $('#modal-btn').click(function() {
     $('#modal-menu, #shadow').fadeIn(300);
