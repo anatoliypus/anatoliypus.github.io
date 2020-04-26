@@ -32,6 +32,15 @@
   height: 900px;
 }
 
+.header-slider 
+{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+  width: 500%;
+}
+
 .slick-next
 {
     position: absolute;
@@ -123,9 +132,11 @@ nav
 
 header 
 {
-  height: 100%;
-  /* width: 500%;
-  box-sizing: border-box;
+  height: 900px;
+  overflow: hidden;
+  min-width: 0;
+  width: 100%;
+  /* box-sizing: border-box;
   display: flex;
   flex-direction: row; */
 }
@@ -137,7 +148,7 @@ header
   background-color: #a09e9e;
   display: flex;
   flex-direction: column;
-  /* width: calc(100% / 5); */
+  width: calc(100% / 5);
 }
 
 #slide1 
