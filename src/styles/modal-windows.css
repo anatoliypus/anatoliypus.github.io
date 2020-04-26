@@ -134,6 +134,12 @@
   color: #000;
 }
 
+.modal-menu-logo 
+{
+  width: 113px;
+  height: 100px;
+}
+
 .modal-menu-right-first-links
 {
   margin-top: 100px;
