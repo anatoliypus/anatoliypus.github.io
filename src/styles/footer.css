@@ -56,3 +56,42 @@ footer .container
   width: 46px;
   height: 46px;
 }
+
+@media screen and (max-width: 550px) 
+{
+  footer .container 
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links-block 
+  {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .footer-links-block h3 
+  {
+    margin-top: 10px;
+    font-size: 23px;
+  }
+
+  .awards 
+  {
+    margin-top: 40px;
+  }
+
+  .awards h3 
+  {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  footer 
+  {
+    height: auto;
+  }
+}

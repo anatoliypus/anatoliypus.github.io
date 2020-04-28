@@ -139,3 +139,61 @@
   top: 250px;
   left: calc(85% + 70px);
 }
+
+@media screen and (max-width: 550px)
+{
+  .reviews 
+  {
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .reviews-block
+  {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .review 
+  {
+    width: 80%;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  .person-info
+  {
+    height: 160px;
+    justify-content: space-between;
+  }
+
+  .review-content img 
+  {
+    height: 0;
+    width: 0;
+  }
+
+  .review hr 
+  {
+    height: 2px;
+    width: 80%;
+    background-color: #168514;
+  }
+
+  .review-content
+  {
+    width: 90%;
+  }
+
+  .reviews-headings
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews-headings button
+  {
+    margin-top: 30px;
+  }
+}

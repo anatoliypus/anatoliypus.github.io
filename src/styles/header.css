@@ -277,3 +277,69 @@ header
     left: 7.5%;
   }
 }
+
+@media screen and (min-width: 550px)
+{
+  #mobile-logo
+  {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 550px)
+{
+  header
+  {
+    height: 719px;
+    box-sizing: border-box;
+  }
+
+  #nav-block
+  {
+    top: 610px;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  nav 
+  {
+    width: auto;
+  }
+
+  .header-content 
+  {
+    padding-top: 80px;
+  }
+
+  .main-heading 
+  {
+    font-size: 40px;
+  }
+
+  .catalog-open-block
+  {
+    width: 85%;
+  }
+
+  #logoLink, .insta-btn, .modal-btn, #slide2, #slide3, #slide4, #slide5
+  {
+    visibility: hidden;
+  }
+
+  .links-hover 
+  {
+    margin-left: 20px;
+  }
+
+  #mobile-logo
+  {
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    left: 5%;
+    z-index: 103;
+  }
+
+}

@@ -84,7 +84,7 @@
   border-bottom: 2px solid #168514;
 }
 
-.we-recommend button 
+.we-recommend-btn
 {
   width: 250px;
   height: 60px;
@@ -96,7 +96,7 @@
   transition: 0.2s;
 }
 
-.we-recommend button:hover
+.we-recommend-btn:hover
 {
   background-color: #10580e;
   transition: 0.2s;
@@ -114,4 +114,50 @@
   position: absolute;
   top: 1820px;
   left: calc(100% - 100px);
+}
+
+@media screen and (max-width: 550px)
+{
+  .we-recommend-headings 
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .we-recommend-btn
+  {
+    margin-top: 40px;
+  }
+
+  .product-slider 
+  {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .product
+  {
+    margin-top: 40px;
+  }
+
+  #we-recommend-desktop-btn 
+  {
+    height: 0;
+    visibility: hidden;
+  }
+
+  #we-recommend-mobile-btn 
+  {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 550px) 
+{
+  #we-recommend-mobile-btn 
+  {
+    visibility: hidden;
+    height: 0;
+  }
 }

@@ -21,4 +21,6 @@ function run() {
   document.querySelector('.slick-prev').append(imgPrev);
 }
 
-window.onload = run;
+if (document.documentElement.clientWidth > 550) {
+  window.onload = run;
+}
