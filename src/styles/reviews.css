@@ -128,14 +128,14 @@
 
 #reviews-left-arrow
 {
-  position: absolute;
-  top: 3800px;
-  left: 80px;
+  position: relative;
+  top: 250px;
+  left: calc(15% - 100px);
 }
 
 #reviews-right-arrow
 {
-  position: absolute;
-  top: 3800px;
-  left: calc(100% - 100px);
+  position: relative;
+  top: 250px;
+  left: calc(85% + 70px);
 }

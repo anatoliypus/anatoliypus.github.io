@@ -18,12 +18,12 @@
 
 #modal-menu 
 {
-  width: 70%;
-  height: 70%;
+  width: 65%;
+  height: 65%;
   background-color: #fff;
   position: fixed;
   top: 15%;
-  left: 15%;
+  left: 17.5%;
   z-index: 110;
   padding: 70px;
   box-sizing: border-box;
@@ -38,7 +38,7 @@
 {
   position: absolute;
   top: 60px;
-  left: calc(100% - 110px);
+  left: calc(100% - 120px);
   background-color: transparent;
   background-image: url("../img/close-modal-btn.png");
   border: 0;
@@ -56,7 +56,7 @@
   height: 35px;
   transition: 0.1s;
   top: 57.5px;
-  left: calc(100% - 112.5px);
+  left: calc(100% - 122.5px);
 }
 
 .modal-menu-left
@@ -70,6 +70,12 @@
   text-align: center;
 }
 
+.small-insta-logo 
+{
+  width: 40px;
+  height: 40px;
+}
+
 .modal-menu-left-text 
 {
   font-weight: 500;
@@ -79,7 +85,7 @@
 
 .modal-menu-numbers 
 {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 25px;
   color: #000;
   margin-top: 10px;
@@ -87,14 +93,14 @@
 
 #modal-menu h4 
 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   color: #C4161B;
 }
 
 .modal-menu-right 
 {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -129,7 +135,7 @@
 
 .modal-menu-right-links
 {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
   color: #000;
 }
