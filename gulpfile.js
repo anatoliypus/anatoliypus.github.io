@@ -17,25 +17,31 @@ gulp.task('browserSync', function(done) {
     open: false
   })
   browserSync.watch('src/*.html').on('change', browserSync.reload);
-  browserSync.watch('src/styles/*').on('change', browserSync.reload);
-  browserSync.watch('src/js').on('change', browserSync.reload);
+  browserSync.watch('src/styles/*/**').on('change', browserSync.reload);
+  browserSync.watch('src/js/*/**').on('change', browserSync.reload);
   done();
 }); 
 
-gulp.task('css', function() {
-  return gulp.src('src/styles/*').pipe(concat('style.css')).pipe(autoprefixer()).pipe(cssmin()).pipe(gulp.dest('dist/css'));
+gulp.task('css', function(done) {
+  gulp.src('src/styles/index/*').pipe(concat('style.css')).pipe(autoprefixer()).pipe(cssmin()).pipe(gulp.dest('dist/css/index'));
+  gulp.src('src/styles/catalog/*').pipe(concat('style.css')).pipe(autoprefixer()).pipe(cssmin()).pipe(gulp.dest('dist/css/catalog'));
+  done();
 });
 
 gulp.task('img', function() {
   return gulp.src('src/img/*').pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('html', function() {
-  return gulp.src('src/*.html').pipe(htmlreplace({js: {src: 'js/script.js', tpl: '<script src="%s" defer></script>'}, css: 'css/style.css'})).pipe(htmlmin()).pipe(gulp.dest('dist'));
+gulp.task('html', function(done) {
+  gulp.src('src/index.html').pipe(htmlreplace({js: {src: 'js/index/script.js', tpl: '<script src="%s" defer></script>'}, css: 'css/index/style.css'})).pipe(htmlmin()).pipe(gulp.dest('dist'));
+  gulp.src('src/catalog.html').pipe(htmlreplace({js: {src: 'js/catalog/script.js', tpl: '<script src="%s" defer></script>'}, css: 'css/catalog/style.css'})).pipe(htmlmin()).pipe(gulp.dest('dist'));
+  done();
 });
 
-gulp.task('js', function() {
-  return gulp.src('src/js/*').pipe(concat('script.js')).pipe(jsmin()).pipe(gulp.dest('dist/js'));
+gulp.task('js', function(done) {
+  gulp.src('src/js/index/*').pipe(concat('script.js')).pipe(jsmin()).pipe(gulp.dest('dist/js/index'));
+  gulp.src('src/js/catalog/*').pipe(concat('script.js')).pipe(jsmin()).pipe(gulp.dest('dist/js/catalog'));
+  done();
 });
 
 gulp.task('clean-dist', function() {

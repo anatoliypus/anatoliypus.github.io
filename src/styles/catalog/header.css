@@ -1,0 +1,120 @@
+nav
+{
+  width: 100%;
+  height: 130px;
+  background-color: #168514;
+}
+
+nav .container 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: calc(100% / 5.5);
+  box-sizing: border-box;
+}
+
+.main-logo 
+{
+  width: calc(70% / 5);
+  height: 155px;
+  background-color: #E30319;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -15px;
+  left: 15%;
+  border-radius: 15px;
+
+}
+
+.main-logo img 
+{
+  width: 113px;
+  height: 100px;
+}
+
+.nav-buttons
+{
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav-buttons:hover
+{
+  width: 55px;
+  height: 55px;
+  transition: 0.3s;
+}
+
+.nav-buttons-block 
+{
+  width: 55px;
+  height: 55px;
+}
+
+.nav-links
+{
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+.nav-links:hover
+{
+  border-bottom: 3px solid #024917;
+}
+
+header 
+{
+  width: 100%;
+  height: 519px;
+}
+
+.header-content
+{
+  height: 393px;
+  background-image: url("../../img/catalog-header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header-content .container 
+{
+  display: flex;
+  align-items: center;
+}
+
+.header-content h1 
+{
+  font-weight: bold;
+  font-size: 55px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1300px) 
+{
+  .main-logo 
+  {
+    width: calc(85% / 5);
+    left: 7.5%;
+  }
+}
+
+@media screen and (max-width: 550px) 
+{
+  .main-logo 
+  {
+    width: calc(90% / 5);
+    left: 5%;
+  }
+}

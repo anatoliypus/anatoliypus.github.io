@@ -1,0 +1,57 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+body, html 
+{
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.container
+{
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+
+button:active, button:focus, input:focus, input:active, textarea:active, textarea:focus
+{
+  outline: none;
+}
+
+textarea 
+{
+  resize: none;
+}
+
+div 
+{
+  z-index: 100;
+}
+
+.logo 
+{
+  width: 113px;
+  height: 100px;
+}
+
+@media screen and (max-width: 1300px) 
+{
+  .container 
+  {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 550px) 
+{
+  .container 
+  {
+    width: 90%;
+  }
+}

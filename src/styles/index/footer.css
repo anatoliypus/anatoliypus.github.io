@@ -1,0 +1,97 @@
+footer 
+{
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+}
+
+footer .container 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.footer-links-block
+{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-links-block h3 
+{
+  font-weight: 400;
+  font-size: 17px;
+  color: #000;
+}
+
+.footer-logo
+{
+  width: 92px;
+  height: 82px;
+}
+
+.awards h3 
+{
+  font-weight: 400;
+  font-size: 19px;
+  color: #000;
+}
+
+.award-block 
+{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.award-block img 
+{
+  width: 46px;
+  height: 46px;
+}
+
+@media screen and (max-width: 550px) 
+{
+  footer .container 
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links-block 
+  {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .footer-links-block h3 
+  {
+    margin-top: 10px;
+    font-size: 23px;
+  }
+
+  .awards 
+  {
+    margin-top: 40px;
+  }
+
+  .awards h3 
+  {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  footer 
+  {
+    height: auto;
+  }
+}
