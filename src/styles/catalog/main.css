@@ -40,6 +40,11 @@ div
   height: 100px;
 }
 
+a 
+{
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1300px) 
 {
   .container 

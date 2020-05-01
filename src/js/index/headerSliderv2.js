@@ -11,14 +11,18 @@ function run() {
   imgPrev.style.width = '17px';
 
   $('.header-slider').slick({
+    dots: true,
+    arrows: false,
     autoplay: true, 
     autoplaySpeed: 4000,
     speed: 700,
-    pauseOnHover: false
+    pauseOnHover: false,
+    appendDots: $('.slider-dots')
   });
-
-  document.querySelector('.slick-next').append(imgNext);
-  document.querySelector('.slick-prev').append(imgPrev);
+  
+  // Arrows
+  // document.querySelector('.slick-next').append(imgNext);
+  // document.querySelector('.slick-prev').append(imgPrev);
 }
 
 if (document.documentElement.clientWidth > 550) {

@@ -57,6 +57,33 @@
     font-size: 0;
 }
 
+.slick-dots 
+{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.slick-dots button
+{
+  border: 0;
+  font-size: 0;
+}
+
+.slick-dots li 
+{
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.slick-dots .slick-active 
+{
+  background-color: #168514 !important; 
+}
+
 .insta-btn, .modal-btn 
 {
   width: 55px;
@@ -205,7 +232,7 @@ header
   flex-direction: row;
   position: absolute;
   left: 15%;
-  top: 800px;
+  top: 830px;
   z-index: 103;
 }
 
