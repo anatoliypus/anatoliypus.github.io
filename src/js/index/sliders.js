@@ -19,10 +19,15 @@ function run() {
     pauseOnHover: false,
     appendDots: $('.slider-dots')
   });
-  
+
   // Arrows
   // document.querySelector('.slick-next').append(imgNext);
   // document.querySelector('.slick-prev').append(imgPrev);
+
+  $('.reviews-block').slick({
+    infinite: true,
+    appendArrows: $('.reviews')
+  });
 }
 
 if (document.documentElement.clientWidth > 550) {
