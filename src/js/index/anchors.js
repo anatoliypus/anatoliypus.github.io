@@ -26,3 +26,7 @@ for (el of links) {
 logoLink.addEventListener('click', anchor);
 
 document.getElementById('grill-bar-anchor').addEventListener('click', anchor);
+
+document.getElementById('footer-anchor-1').addEventListener('click', anchor);
+
+document.getElementById('footer-anchor-2').addEventListener('click', anchor);

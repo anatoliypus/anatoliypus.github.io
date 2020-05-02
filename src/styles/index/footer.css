@@ -57,6 +57,11 @@ footer .container
   height: 46px;
 }
 
+footer a, footer h3 
+{
+  cursor: pointer;
+}
+
 @media screen and (max-width: 550px) 
 {
   footer .container 

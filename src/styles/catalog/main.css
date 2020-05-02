@@ -12,6 +12,17 @@ body, html
   overflow-x: hidden;
 }
 
+a 
+{
+  text-decoration: none;
+  color: inherit;
+}
+
+button 
+{
+  cursor: pointer;
+}
+
 .container
 {
   width: 70%;
@@ -38,11 +49,6 @@ div
 {
   width: 113px;
   height: 100px;
-}
-
-a 
-{
-  text-decoration: none;
 }
 
 @media screen and (max-width: 1300px) 

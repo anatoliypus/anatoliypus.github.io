@@ -18,6 +18,11 @@ a
   color: inherit;
 }
 
+button 
+{
+  cursor: pointer;
+}
+
 .container
 {
   width: 70%;

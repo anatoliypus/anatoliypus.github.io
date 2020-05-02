@@ -16,12 +16,19 @@
   <link rel="stylesheet" href="styles/catalog/footer.css">
   <link rel="stylesheet" href="styles/catalog/keep-in-touch.css">
   <link rel="stylesheet" href="styles/catalog/modal-windows.css">
+  <link rel="stylesheet" href="styles/catalog/preloader.css">
   <!-- endbuild -->
   <!-- build:js -->
   <script src="js/catalog/showModals.js" defer></script>
+  <script src="js/catalog/placeholder.js" defer></script>
   <!-- endbuild -->
 </head>
 <body>
+  <div id="preloader">
+    <img src="img/logo.png" alt="logo" id="pre-logo">
+    <img src="img/preloader-2.png" alt="preloader" id="preloader-img">
+    <h3>Пожалуйста, подождите, страница загружается!</h3>
+  </div>
   <div id="modal-menu" style="visibility: hidden;">
     <button id="modal-menu-close"></button>
     <div class="modal-menu-left">
@@ -169,14 +176,14 @@
     <div class="container">
       <img src="img/logo.png" alt="logo" class="logo">
       <div class="footer-links-block">
-        <h3>Каталог продукции</h3>
-        <h3>Гриль-бар</h3>
+        <a href="catalog.html">Каталог продукции</a>
+        <a href="index.html#shops">Гриль-бар</a>
         <h3>Для бизнес-партнеров</h3>
       </div>
       <div class="footer-links-block">
         <h3>Раскрытие информации</h3>
-        <h3>Контакты</h3>
-        <h3>Адреса магазинов</h3>
+        <h3 id="footer-modal-btn">Контакты</h3>
+        <a href="index.html#shops">Адреса магазинов</a>
       </div>
       <div class="awards">
         <h3>Наши награды:</h3>

@@ -10,10 +10,16 @@
   <link rel="stylesheet" href="css/index/style.css">
   <script src="jquery/jquery.js" defer="defer"></script>
   <script src="slick/slick.min.js" defer="defer"></script>
+  <script src="js/index/placeholder.js" defer="defer"></script>
   <script src="js/index/script.js" defer="defer"></script>
   <title>ЗАО "Марийское"</title>
 </head>
 <body>
+  <div id="preloader">
+    <img src="img/logo.png" alt="logo" id="pre-logo">
+    <img src="img/preloader-2.png" alt="preloader" id="preloader-img">
+    <h3>Пожалуйста, подождите, страница загружается!</h3>
+  </div>
   <div id="modal-reviews" style="visibility: hidden;">
     <button id="modal-reviews-close"></button>
     <div class="container">
@@ -454,13 +460,13 @@
       <img src="img/logo.png" alt="logo" class="logo">
       <div class="footer-links-block">
         <a href="catalog.html">Каталог продукции</a>
-        <h3>Гриль-бар</h3>
+        <h3 destid="shops" id="footer-anchor-1">Гриль-бар</h3>
         <h3>Для бизнес-партнеров</h3>
       </div>
       <div class="footer-links-block">
         <h3>Раскрытие информации</h3>
-        <h3>Контакты</h3>
-        <h3>Адреса магазинов</h3>
+        <h3 id="footer-modal-btn">Контакты</h3>
+        <h3 destid="shops" id="footer-anchor-2">Адреса магазинов</h3>
       </div>
       <div class="awards">
         <h3>Наши награды:</h3>
