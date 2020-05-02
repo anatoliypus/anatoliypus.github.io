@@ -24,3 +24,5 @@ for (el of links) {
   el.addEventListener('click', anchor);
 }
 logoLink.addEventListener('click', anchor);
+
+document.getElementById('grill-bar-anchor').addEventListener('click', anchor);
