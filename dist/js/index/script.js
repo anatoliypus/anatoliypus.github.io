@@ -3,7 +3,7 @@ const links=document.getElementsByClassName('nav-links');const logoLink=document
 if(destId!='header'||window.pageYOffset>300){$('html, body').animate({scrollTop:destOffset+window.pageYOffset-navPar},1500);}}
 document.getElementById('shopsAnchor').onclick=function(){let offset=document.getElementById('shops').getBoundingClientRect().top-navHeight;$('html, body').animate({scrollTop:offset},1500);}
 for(el of links){el.addEventListener('click',anchor);}
-logoLink.addEventListener('click',anchor);if(document.documentElement.clientWidth>550){let showStyles={backgroundColor:'transparent',position:'relative',height:'125px'}
+logoLink.addEventListener('click',anchor);document.getElementById('grill-bar-anchor').addEventListener('click',anchor);if(document.documentElement.clientWidth>550){let showStyles={backgroundColor:'transparent',position:'relative',height:'125px'}
 let hideStyles={backgroundColor:'#168514',position:'fixed',height:'80px'}
 let showLogoStyles={width:'90px',height:'90px'}
 let hideLogoStyles={width:'60px',height:'60px'}
