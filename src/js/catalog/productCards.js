@@ -22,7 +22,7 @@ window.onload = function() {
   // let blocksHeight = navHeight + footerHeight;
   // blocksHeight += keepInTouch.getBoundingClientRect().height;
 
-  let productCardHeight = document.documentElement.clientHeight - navHeight - footerHeight + 'px';
+  let productCardHeight = document.documentElement.clientHeight - navHeight + 'px';
   productCard.style.height = scrollHeightTrue + 'px';
 
   let lastOffset = 0;
@@ -33,13 +33,12 @@ window.onload = function() {
     lastOffset = window.pageYOffset;
     $('#white-block').fadeIn(300, () => {
       $('body').css({position: 'fixed', height: '100%', overflow: 'hidden'});
-      $('nav, footer').css({position: 'absolute'});
+      $('nav').css({position: 'absolute'});
       $('footer').css({backgroundColor: '#168514'});
       $('footer h3, footer a').css({color: '#fff'});
       $('#product-card').css({top: window.pageYOffset + navHeight + 'px', height: productCardHeight});
       $('#product-card').show();
-      $('nav').animate({top: window.pageYOffset + 'px'}, 500);
-      $('footer').animate({top: window.pageYOffset + document.documentElement.clientHeight - footerHeight + 'px'}, 500, 'linear', () => {
+      $('nav').animate({top: window.pageYOffset + 'px'}, 500, 'linear', () => {
         $('#white-block').fadeOut(900);
       });
     });
@@ -48,10 +47,9 @@ window.onload = function() {
   
 
   document.querySelector('#product-card-return').addEventListener('click', function() {
-    $('#white-block').fadeIn(900, () => {
+    $('#white-block').fadeIn(200, () => {
       $('#product-card').hide();
-      $('nav').animate({top: 0}, 500);
-      $('footer').animate({top: scrollHeightTrue - footerHeight}, 500, 'linear', () => {
+      $('nav').animate({top: 0}, 500, 'linear', () => {
         $('footer, nav').css({position: 'static'});
         $('body').css({position: 'static', height: 'auto', overflow: 'visible'});
         $('footer').css({backgroundColor: '#fff'});

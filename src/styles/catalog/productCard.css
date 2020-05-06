@@ -7,6 +7,8 @@
   background-color: #fff;
   z-index: 120;
   visibility: hidden;
+  display: flex;
+  align-items: center;
 }
 
 #product-card .container 
@@ -15,6 +17,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 80%;
 }
 
 .product-card-image
@@ -30,7 +33,7 @@
   align-items: flex-start;
   justify-content: space-between;
   width: 50%;
-  height: 85%;
+  height: 100%;
 }
 
 .product-card-features
