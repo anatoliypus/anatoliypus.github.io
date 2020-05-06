@@ -54,6 +54,8 @@ window.onload = function() {
       $('footer').animate({top: scrollHeightTrue - footerHeight}, 500, 'linear', () => {
         $('footer, nav').css({position: 'static'});
         $('body').css({position: 'static', height: 'auto', overflow: 'visible'});
+        $('footer').css({backgroundColor: '#fff'});
+        $('footer h3, footer a').css({color: '#000'});
         window.scrollTo(0, lastOffset);
         $('#white-block').fadeOut(600);
       });
