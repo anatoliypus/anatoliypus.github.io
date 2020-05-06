@@ -7,7 +7,7 @@
   height: 5210px;
   background-color: #000;
   opacity: 70%;
-  z-index: 105;
+  z-index: 150;
   overflow: hidden;
 }
 
@@ -24,7 +24,7 @@
   position: fixed;
   top: 15%;
   left: 17.5%;
-  z-index: 110;
+  z-index: 152;
   padding: 70px;
   box-sizing: border-box;
   display: flex;

@@ -313,6 +313,7 @@ header
   {
     visibility: hidden;
     position: absolute;
+    height: 0;
   }
 }
 

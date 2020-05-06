@@ -17,56 +17,15 @@
   <link rel="stylesheet" href="styles/catalog/keep-in-touch.css">
   <link rel="stylesheet" href="styles/catalog/modal-windows.css">
   <link rel="stylesheet" href="styles/catalog/preloader.css">
+  <link rel="stylesheet" href="styles/catalog/productCard.css">
   <!-- endbuild -->
   <!-- build:js -->
   <script src="js/catalog/showModals.js" defer></script>
   <script src="js/catalog/placeholder.js" defer></script>
+  <script src="js/catalog/productCards.js" defer></script>
   <!-- endbuild -->
 </head>
 <body>
-  <div id="preloader">
-    <!-- <img src="img/logo.svg" alt="logo" id="pre-logo"> -->
-    <img src="img/preloader-2.png" alt="preloader" id="preloader-img">
-    <!-- <h3>Пожалуйста, подождите, страница загружается!</h3> -->
-  </div>
-  <div id="modal-menu" style="visibility: hidden;">
-    <button id="modal-menu-close"></button>
-    <div class="modal-menu-left">
-      <img src="img/logo.svg" alt="logo" class="logo">
-      <div>
-        <h3 class="modal-menu-left-text">Горячая линия:</h3>
-        <h3 class="modal-menu-numbers">8 (8362) 000 - 000</h3>
-      </div>
-      <div>
-        <h3 class="modal-menu-left-text">Приемная:</h3>
-        <h3 class="modal-menu-numbers">8 (8362) 000 - 000</h3>
-      </div>
-      <h4>email@email.ru</h4>
-      <img src="img/small-insta-logo.png" alt="instagram" class="small-insta-logo">
-    </div> 
-    <div class="modal-menu-right">
-      <div class="modal-menu-right-block">
-        <img src="img/green-chicken.svg" alt="chicken">
-        <div class="modal-menu-content">
-          <h3 class="modal-menu-right-links">Мясо птицы</h3>
-          <h3 class="modal-menu-right-links">Колбасные изделия</h3>
-          <h3 class="modal-menu-right-links">Молочная продукция</h3>
-          <h3 class="modal-menu-right-links">Полуфабрикаты</h3>
-          <h3 class="modal-menu-right-links">Сыры</h3>
-        </div>
-      </div>
-      <div class="modal-menu-right-block">
-        <img src="img/others-label.svg" alt="others label">
-        <div class="modal-menu-content">
-          <h3 class="modal-menu-right-links">Раскрытие информации</h3>
-          <h3 class="modal-menu-right-links">Соглашение о конфиденциальности</h3>
-          <h3 class="modal-menu-right-links">Для бизнес-партнеров</h3>
-          <h3 class="modal-menu-right-links">Наши награды</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="shadow" id='shadow' style="visibility: hidden;"></div>
   <header>
     <nav>
       <div class="container">
@@ -94,7 +53,7 @@
   <div class="products">
     <div class="container">
       <div class="filters-block">
-        <img src="img/filter-btn.png" alt="filter elements">
+        <img src="img/filter-btn.png" alt="filter elements" class="product-img">
         <pre>Главная  >  <span>Каталог</span></pre>
       </div>
       <h2>Продукция ЗАО “Марийское”</h2>
@@ -193,5 +152,97 @@
       </div>
     </div>
   </footer>
+  <div id="product-card">
+    <div class="container" id="product-card-content">
+      <img src="img/catalog-chicken-wings.png" alt="product image" class="product-card-image">
+      <div class="product-card-content">
+        <p>Главная  >  Каталог  >  Куриное мясо  > <span>Крылья куриные</span></p>
+        <h3>Крылья куриные</h3>
+        <div class="product-card-features">
+          <div class="product-card-feature">
+            <img src="img/storage-conds.svg" alt="product storage conditions">
+            <h4>Условия хранения</h4>
+            <h5>От -2 до +2&degC</h5>
+          </div>
+          <div class="product-card-feature">
+            <img src="img/lifetime.svg" alt="product lifetime">
+            <h4>Срок годности</h4>
+            <h5>10 суток</h5>
+          </div>
+          <div class="product-card-feature">
+            <img src="img/weight.svg" alt="product weight">
+            <h4>Вес продукта</h4>
+            <h5>0,8кг</h5>
+          </div>
+        </div>
+        <hr>
+        <div class="product-properties">
+          <div class="product-property">
+            <h4>Пищевая ценность</h4>
+            <h5>
+              Белки - __ г.<br>
+              Жиры - __ г.<br>
+              Углеводы - __ г.<br>
+            </h5>
+          </div>
+          <div class="product-property">
+            <h4>Калорийность</h4>
+            <h5>180 ккал / 750 кДж</h5>
+          </div>
+          <div class="product-property">
+            <h4>Состав</h4>
+            <h5>
+              Голень цыплят-бройлеров, маринад - масло растительное, соль Экстра, специи и экстракты специй, 
+              усилитель вкуса Е 621, декстроза.
+            </h5>
+          </div>
+        </div>
+        <button class="products-btn" id="product-card-return">Назад <img src="img/return-icon.svg" alt="return"></button>
+      </div>
+    </div>
+  </div>
+  <div id="preloader">
+    <img src="img/logo.svg" alt="logo" id="pre-logo">
+    <img src="img/preloader.png" alt="preloader" id="preloader-img">
+  </div>
+  <div id="modal-menu" style="visibility: hidden;">
+    <button id="modal-menu-close"></button>
+    <div class="modal-menu-left">
+      <img src="img/logo.svg" alt="logo" class="logo">
+      <div>
+        <h3 class="modal-menu-left-text">Горячая линия:</h3>
+        <h3 class="modal-menu-numbers">8 (8362) 000 - 000</h3>
+      </div>
+      <div>
+        <h3 class="modal-menu-left-text">Приемная:</h3>
+        <h3 class="modal-menu-numbers">8 (8362) 000 - 000</h3>
+      </div>
+      <h4>email@email.ru</h4>
+      <img src="img/small-insta-logo.png" alt="instagram" class="small-insta-logo">
+    </div> 
+    <div class="modal-menu-right">
+      <div class="modal-menu-right-block">
+        <img src="img/green-chicken.svg" alt="chicken">
+        <div class="modal-menu-content">
+          <h3 class="modal-menu-right-links">Мясо птицы</h3>
+          <h3 class="modal-menu-right-links">Колбасные изделия</h3>
+          <h3 class="modal-menu-right-links">Молочная продукция</h3>
+          <h3 class="modal-menu-right-links">Полуфабрикаты</h3>
+          <h3 class="modal-menu-right-links">Сыры</h3>
+        </div>
+      </div>
+      <div class="modal-menu-right-block">
+        <img src="img/others-label.svg" alt="others label">
+        <div class="modal-menu-content">
+          <h3 class="modal-menu-right-links">Раскрытие информации</h3>
+          <h3 class="modal-menu-right-links">Соглашение о конфиденциальности</h3>
+          <h3 class="modal-menu-right-links">Для бизнес-партнеров</h3>
+          <h3 class="modal-menu-right-links">Наши награды</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="shadow" id='shadow' style="visibility: hidden;"></div>
+  <div id="white-block"></div>
 </body>
 </html>
