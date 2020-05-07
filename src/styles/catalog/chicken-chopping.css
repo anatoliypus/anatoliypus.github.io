@@ -1,6 +1,6 @@
 .chicken-chopping 
 {
-  height: 580px;
+  height: auto;
   background-color: #F5F0F0;
   width: 100%;
   box-sizing: border-box;
@@ -27,8 +27,101 @@
 
 #chicken-block 
 {
-  width: 100%;
-  height: auto;
+  height: 620px;
   display: flex;
   justify-content: center;
+  position: relative;
+  width: 750px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#chop-head 
+{
+  position: absolute;
+  right: 100px;
+  top: 0;
+  width: 130px;
+  height: 130px;
+}
+
+#chop-neck
+{
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  right: 130px;
+  top: 90px;
+}
+
+#chop-chest
+{
+  position: absolute;
+  width: 220px;
+  height: 240px;
+  top: 205px;
+  right: 125px;
+}
+
+#chop-soup-kit 
+{
+  position: absolute;
+  top: 170px;
+  right: 255px;
+  width: 280px;
+  height: 325px;
+}
+
+#chop-wing
+{
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  top: 228px;
+  right: 265px;
+}
+
+#chop-tail
+{
+  width: 150px;
+  height: 237px;
+  position: absolute;
+  top: 92px;
+  right: 505px;
+}
+
+#chop-front-hip
+{
+  width: 90px;
+  height: 125px;
+  position: absolute;
+  top: 375px;
+  right: 355px;
+}
+
+#chop-back-hip
+{
+  height: 153px;
+  width: 105px;
+  position: absolute;
+  top: 335px;
+  right: 285px;
+}
+
+#chop-front-leg
+{
+  width: 105px;
+  height: 130px;
+  position: absolute;
+  top: 490px;
+  right: 310px;
+}
+
+#chop-back-leg
+{
+  width: 95px;
+  height: 110px;
+  position: absolute;
+  top: 450px;
+  right: 230px;
 }
