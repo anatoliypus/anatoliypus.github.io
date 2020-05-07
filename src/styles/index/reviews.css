@@ -60,7 +60,7 @@
   position: relative;
 }
 
-.reviews .slick-prev
+.reviews .bx-prev
 {
   position: absolute;
   top: 50%;
@@ -73,9 +73,10 @@
   width: 30px;
   height: 30px;
   border: 0;
+  display: block;
 }
 
-.reviews .slick-next
+.reviews .bx-next
 {
   position: absolute;
   top: 50%;
@@ -89,11 +90,29 @@
   height: 30px;
   border: 0;
   z-index: 110;
+  display: block;
+}
+
+.reviews .bx-wrapper, .reviews .bx-viewport 
+{
+  width: 100%;
+}
+
+.reviews .bx-wrapper 
+{
+  margin-top: 80px;
+}
+
+.reviews .bx-viewport 
+{
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .review 
 {
-  width: 45%;
+  width: 300px;
   height: 220px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -102,7 +121,6 @@
   flex-direction: row;
   box-sizing: border-box;
   align-items: center;
-  margin: 2px;
 }
 
 .person-info 
@@ -131,10 +149,6 @@
 {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 80px;
 }
 
 .reviews-block hr 

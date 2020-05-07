@@ -1,19 +1,20 @@
 function run() {
   $('.header-slider').css({width: '100%'});
 
-  $('.header-slider').slick({
-    dots: true,
-    arrows: false,
-    autoplay: true, 
-    autoplaySpeed: 4000,
-    speed: 700,
-    pauseOnHover: false,
-    appendDots: $('.slider-dots')
+  $('.header-slider').bxSlider({
+    controls: false,
+    auto: true,
+    speed: 1100,
+    pause: 6000
   });
 
-  $('.reviews-block').slick({
-    infinite: true,
-    appendArrows: $('.reviews')
+  $('.reviews-block').bxSlider({
+    pager: false,
+    slideWidth: document.documentElement.clientWidth * 0.7 * 0.5,
+    minSlides: 2,
+    moveSlides: 1,
+    maxSlides: 2,
+    slideMargin: 40,
   });
 }
 

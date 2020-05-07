@@ -7,28 +7,7 @@
   background-repeat: no-repeat;
 }
 
-header .slick-prev
-{
-    position: absolute;
-    top: 438px;
-    left: 48px;
-    background-color: rgba(175, 175, 175, 0.8);
-    border: none;
-    border-radius: 5px;
-    width: 45px;
-    height: 45px;
-    transition: 0.4s;
-    z-index: 102;
-    font-size: 0;
-}
-
-header .slick-next:hover, header .slick-prev:hover
-{
-    background-color: hsla(6, 82%, 68%, 0.829);
-    transition: 0.4s;
-}
-
-header .slick-slider, header .slick-list, header .draggable, header .slick-track, header .slick-initialized
+header .bx-wrapper, .bx-viewport
 {
   height: 900px;
 }
@@ -42,35 +21,18 @@ header .slick-slider, header .slick-list, header .draggable, header .slick-track
   width: 500%;
 }
 
-header .slick-next
-{
-    position: absolute;
-    top: 438px;
-    right: 48px;
-    background-color: rgba(175, 175, 175, 0.8);
-    border: none;
-    border-radius: 5px;
-    width: 45px;
-    height: 45px;
-    transition: 0.4s;
-    z-index: 102;
-    font-size: 0;
-}
-
-.slick-dots 
+header .bx-pager
 {
   list-style-type: none;
   display: flex;
   flex-direction: row; 
+  position: absolute;
+  top: 820px;
+  left: 15%;
+  z-index: 103;
 }
 
-.slick-dots button
-{
-  border: 0;
-  font-size: 0;
-}
-
-.slick-dots li 
+header .bx-pager-link
 {
   background-color: #fff;
   width: 20px;
@@ -78,9 +40,16 @@ header .slick-next
   border-radius: 10px;
   margin-right: 30px;
   cursor: pointer;
+  border: 0;
+  display: block;
 }
 
-.slick-dots .slick-active 
+header .bx-pager-item
+{
+  font-size: 0;
+}
+
+header .active
 {
   background-color: #168514 !important; 
 }
@@ -179,6 +148,7 @@ header
   display: flex;
   flex-direction: column;
   width: calc(100% / 5);
+  height: 100%;
 }
 
 #slide2
@@ -199,7 +169,7 @@ header
 .header-content
 {
   box-sizing: border-box;
-  padding-bottom: 120px;
+  padding-bottom: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -301,7 +271,7 @@ header
 
 @media screen and (max-width: 1300px)
 {
-  .slider-dots 
+  header .bx-pager
   {
     left: 7.5%;
   }
