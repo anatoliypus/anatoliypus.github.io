@@ -1,1 +1,13 @@
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve"><style>.st0{fill:#0f6f12}</style><path class="st0" d="M59.9 138.9s77.5 161.4 77.5 355.1h80.2c0-.1 6.5-262.9-157.7-355.1zm392.3 0S374.7 300.3 374.7 494h-80.2c0-.1-6.4-262.9 157.7-355.1z"/><path class="st0" d="M512 286.4s-58.1 69.2-58.1 207.5h-80.2S359.8 332.5 512 286.4zm-512 0s58.1 69.2 58.1 207.5h80.2S152.2 332.5 0 286.4zM380.2 18.1S296.3 219.2 296.3 494H216c0-.1-14.7-323.8 164.2-475.9z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0F6F12;}
+</style>
+<path class="st0" d="M59.9,138.9c0,0,77.5,161.4,77.5,355.1h80.2C217.6,493.9,224.1,231.1,59.9,138.9z"/>
+<path class="st0" d="M452.2,138.9c0,0-77.5,161.4-77.5,355.1h-80.2C294.5,493.9,288.1,231.1,452.2,138.9z"/>
+<path class="st0" d="M512,286.4c0,0-58.1,69.2-58.1,207.5h-80.2C373.7,493.9,359.8,332.5,512,286.4z"/>
+<path class="st0" d="M0,286.4c0,0,58.1,69.2,58.1,207.5h80.2C138.3,493.9,152.2,332.5,0,286.4z"/>
+<path class="st0" d="M380.2,18.1c0,0-83.9,201.1-83.9,475.9H216C216,493.9,201.3,170.2,380.2,18.1z"/>
+</svg>

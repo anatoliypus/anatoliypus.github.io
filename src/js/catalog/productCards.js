@@ -30,6 +30,11 @@ window.onload = function() {
   document.querySelector('.products-block').addEventListener('click', function(event) {
     let el = event.target.closest('div');
     if (!el) return;
+    let productName = el.querySelector('h3').textContent;
+    let imagePath = el.querySelector('img').src;
+    console.log(productName + ' ' + imagePath);
+    document.querySelector('#product-card h3').textContent = productName;
+    document.getElementById('product-card-image').setAttribute('src', imagePath);
     lastOffset = window.pageYOffset;
     $('#white-block').fadeIn(300, () => {
       $('body').css({position: 'fixed', height: '100%', overflow: 'hidden'});
