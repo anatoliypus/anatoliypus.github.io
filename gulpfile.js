@@ -56,15 +56,15 @@ gulp.task('minImg', function() {
   return gulp.src('src/img/*').pipe(imagemin()).pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('slick', function() {
-  return gulp.src('src/slick/*').pipe(gulp.dest('dist/slick'));
+gulp.task('slider', function() {
+  return gulp.src('src/bxSlider/*').pipe(gulp.dest('dist/bxSlider'));
 })
 
 gulp.task('jquery', function() {
   return gulp.src('src/jquery/jquery.js').pipe(gulp.dest('dist/jquery'));
 })
 
-exports.bundle = gulp.series('clean-dist', 'img', 'css', 'html', 'js', 'slick', 'jquery');
+exports.bundle = gulp.series('clean-dist', 'img', 'css', 'html', 'js', 'slider', 'jquery');
 exports.imgMin = gulp.series('clean-img', 'minImg');
 exports.default = gulp.series('browserSync');
 
