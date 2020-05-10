@@ -5,7 +5,8 @@ function run() {
     controls: false,
     auto: true,
     speed: 1100,
-    pause: 6000
+    pause: 6000,
+    touchEnabled: false
   });
 
   $('.reviews-block').bxSlider({

@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script src="jquery/jquery.js" defer="defer"></script>
   <link rel="stylesheet" href="css/catalog/style.css">
-  <script src="js/catalog/script.js" defer="defer"></script></head>
+</head>
 <body>
   <div id="preloader">
     <img src="img/logo.svg" alt="logo" id="pre-logo">
@@ -104,16 +104,20 @@
     <div class="container">
       <h2>Схема разделки птицы</h2>
       <div id="chicken-block">
-        <img src="img/chicken-head.svg" alt="head" id="chop-head">
-        <img src="img/chicken-neck.svg" alt="neck" id="chop-neck">
-        <img src="img/chicken-chest.svg" alt="chest" id="chop-chest">
-        <img src="img/chicken-soup-kit.svg" alt="soup kit" id="chop-soup-kit">
-        <img src="img/chicken-wing.svg" alt="wing" id="chop-wing">
-        <img src="img/chicken-tale.svg" alt="tale" id="chop-tail">
-        <img src="img/chicken-front-hip.svg" alt="front hip" id="chop-front-hip">
-        <img src="img/chicken-back-hip.svg" alt="back hip" id="chop-back-hip">
-        <img src="img/chicken-leg.svg" alt="leg" id="chop-front-leg">
-        <img src="img/chicken-leg.svg" alt="leg" id="chop-back-leg">
+        <div id="chicken-block-message">
+          <h3></h3>
+          <p></p>
+        </div>
+        <div id="chop-head" heading="Голова" class="chicken-parts"></div>
+        <div id="chop-neck" heading="Шейка" class="chicken-parts"></div>
+        <div id="chop-chest" heading="Грудка" class="chicken-parts"></div>
+        <div id="chop-soup-kit" heading="Суповый набор" class="chicken-parts"></div>
+        <div id="chop-wing" heading="Крылышки" class="chicken-parts"></div>
+        <div id="chop-tail" heading="" class="chicken-parts"></div>
+        <div id="chop-front-hip" heading="Бедро" class="chicken-parts"></div>
+        <div id="chop-back-hip" heading="Окорочок" class="chicken-parts"></div>
+        <div id="chop-front-leg" heading="Голень" class="chicken-parts"></div>
+        <div id="chop-back-leg" heading="Голень" class="chicken-parts"></div>
       </div>
     </div>
   </div>
@@ -238,5 +242,6 @@
   </div>
   <div id="shadow" id="shadow" style="visibility: hidden;"></div>
   <div id="white-block"></div>
+  <script src="js/catalog/script.js" defer="defer"></script>
 </body>
 </html>

@@ -8,6 +8,19 @@
   padding-bottom: 40px;
 }
 
+#chicken-block-message 
+{
+  position: absolute;
+  right: 200px;
+  width: 300px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 25px;
+  z-index: 105;
+}
+
 .chicken-chopping .container 
 {
   display: flex;
@@ -36,6 +49,12 @@
   margin-top: 30px;
 }
 
+#chicken-block div
+{
+  background-size: contain;
+  background-repeat: no-repeat
+}
+
 #chop-head 
 {
   position: absolute;
@@ -43,6 +62,14 @@
   top: 0;
   width: 130px;
   height: 130px;
+  background-image: url('../../img/chicken-head.svg');
+  transition: 0.1s;
+}
+
+#chop-head:hover
+{
+  background-image: url('../../img/chicken-head-red.svg');
+  transition: 0.1s;
 }
 
 #chop-neck
@@ -52,6 +79,14 @@
   height: 140px;
   right: 130px;
   top: 90px;
+  background-image: url('../../img/chicken-neck.svg');
+  transition: 0.1s;
+}
+
+#chop-neck:hover
+{
+  background-image: url('../../img/chicken-neck-red.svg');
+  transition: 0.1s;
 }
 
 #chop-chest
@@ -61,6 +96,14 @@
   height: 240px;
   top: 205px;
   right: 125px;
+  background-image: url('../../img/chicken-chest.svg');
+  transition: 0.1s;
+}
+
+#chop-chest:hover
+{
+  background-image: url('../../img/chicken-chest-red.svg');
+  transition: 0.1s;
 }
 
 #chop-soup-kit 
@@ -70,6 +113,14 @@
   right: 255px;
   width: 280px;
   height: 325px;
+  background-image: url('../../img/chicken-soup-kit.svg');
+  transition: 0.1s;
+}
+
+#chop-soup-kit:hover
+{
+  background-image: url('../../img/chicken-soup-kit-red.svg');
+  transition: 0.1s;
 }
 
 #chop-wing
@@ -79,6 +130,14 @@
   height: 100px;
   top: 228px;
   right: 265px;
+  background-image: url('../../img/chicken-wing.svg');
+  transition: 0.1s;
+}
+
+#chop-wing:hover
+{
+  background-image: url('../../img/chicken-wing-red.svg');
+  transition: 0.1s;
 }
 
 #chop-tail
@@ -88,6 +147,7 @@
   position: absolute;
   top: 92px;
   right: 505px;
+  background-image: url('../../img/chicken-tale.svg');
 }
 
 #chop-front-hip
@@ -97,6 +157,14 @@
   position: absolute;
   top: 375px;
   right: 355px;
+  background-image: url('../../img/chicken-front-hip.svg');
+  transition: 0.1s;
+}
+
+#chop-front-hip:hover
+{
+  background-image: url('../../img/chicken-front-hip-red.svg');
+  transition: 0.1s;
 }
 
 #chop-back-hip
@@ -106,6 +174,14 @@
   position: absolute;
   top: 335px;
   right: 285px;
+  background-image: url('../../img/chicken-back-hip.svg');
+  transition: 0.1s;
+}
+
+#chop-back-hip:hover
+{
+  background-image: url('../../img/chicken-back-hip-red.svg');
+  transition: 0.1s;
 }
 
 #chop-front-leg
@@ -115,6 +191,15 @@
   position: absolute;
   top: 490px;
   right: 310px;
+  background-image: url('../../img/chicken-leg.svg');
+  transition: 0.1s;
+  z-index: 99;
+}
+
+#chop-front-leg:hover
+{
+  background-image: url('../../img/chicken-leg-red.svg');
+  transition: 0.1s;
 }
 
 #chop-back-leg
@@ -124,4 +209,13 @@
   position: absolute;
   top: 450px;
   right: 230px;
+  background-image: url('../../img/chicken-leg.svg');
+  transition: 0.1s;
+  z-index: 99;
+}
+
+#chop-back-leg:hover
+{
+  background-image: url('../../img/chicken-leg-red.svg');
+  transition: 0.1s;
 }
